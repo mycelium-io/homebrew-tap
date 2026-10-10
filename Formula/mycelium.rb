@@ -1,20 +1,20 @@
 class Mycelium < Formula
   desc "Multi-agent coordination CLI — persistent memory and real-time negotiation"
   homepage "https://github.com/mycelium-io/mycelium"
-  version "3.0.36"
+  version "3.0.37"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/mycelium-io/mycelium/releases/download/v#{version}/mycelium-darwin-arm64"
-      sha256 "d662683a17ba55037e67e132f66961066b3073fc9d039ac0648f001054c765cd"
+      sha256 "8ebbfdccbfa2b68b8fe8c96f38de4bfeed5015835a46235a05f9c9fa79ddec7f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mycelium-io/mycelium/releases/download/v#{version}/mycelium-linux-x86_64"
-      sha256 "2cac1543a8511f83b0b887c2c7ac349510c7dda8f05812da2a791697282689f5"
+      sha256 "4ac7bbc55622ecc7828262e5e06c5562bdefc158476e0ad5c0b121c3319a2aa7"
     end
   end
 
