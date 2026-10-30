@@ -29,12 +29,15 @@ class Mycelium < Formula
   def caveats
     <<~EOS
       Mycelium is no longer installed with Homebrew, and this formula gets no
-      new versions. Move to the installer, which on an Apple silicon Mac
-      installs the Mycelium app with its own hub:
+      new versions. Move to the installer. To keep the Docker setup you have
+      now, and the rooms on it:
 
         brew uninstall mycelium
         brew untap mycelium-io/tap
-        curl -fsSL https://mycelium-io.github.io/mycelium/install.sh | bash
+        curl -fsSL https://mycelium-io.github.io/mycelium/install.sh | bash -s -- --docker
+
+      Without --docker, an Apple silicon Mac gets the Mycelium app instead,
+      which runs a new hub of its own beside your Docker one.
     EOS
   end
 
